@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | Quizaro: AI Quiz Maker</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for Quizaro: AI Quiz Maker. Learn how Quizaro handles photos, PDFs, study notes, AI processing, subscriptions, and user privacy."
+  />
+
+  <meta name="theme-color" content="#0B67F6" />
+
+  <style>
+    :root {
+      --primary: #0B67F6;
+      --primary-dark: #084DC0;
+      --primary-soft: #EEF5FF;
+
+      --text: #111827;
+      --muted: #667085;
+      --border: #E5E7EB;
+
+      --background: #F7F9FC;
+      --surface: #FFFFFF;
+
+      --success: #0F9D68;
+      --success-soft: #ECFDF3;
+
+      --shadow:
+        0 20px 60px rgba(17, 24, 39, 0.08),
+        0 2px 8px rgba(17, 24, 39, 0.04);
+
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --radius-sm: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(11, 103, 246, 0.08),
+          transparent 30%
+        ),
+        var(--background);
+
+      color: var(--text);
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    /* NAV */
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 28px;
+      padding: 14px 18px;
+
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      border-radius: 20px;
+
+      box-shadow: 0 8px 30px rgba(17, 24, 39, 0.05);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      color: white;
+      font-size: 19px;
+      font-weight: 800;
+
+      background:
+        linear-gradient(
+          145deg,
+          #2682FF 0%,
+          #0B67F6 52%,
+          #0747AE 100%
+        );
+
+      box-shadow:
+        0 8px 20px rgba(11, 103, 246, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: -0.2px;
+    }
+
+    .brand-text span {
+      display: block;
+      margin-top: 1px;
+
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .nav-badge {
+      padding: 8px 12px;
+
+      border-radius: 999px;
+      background: var(--primary-soft);
+
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: 68px 52px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #FFFFFF 0%,
+          #F7FBFF 70%,
+          #EEF5FF 100%
+        );
+
+      border: 1px solid rgba(229, 231, 235, 0.9);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+
+      width: 320px;
+      height: 320px;
+
+      right: -130px;
+      top: -140px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(11, 103, 246, 0.18),
+          rgba(11, 103, 246, 0)
+        );
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-bottom: 18px;
+      padding: 8px 12px;
+
+      border-radius: 999px;
+
+      background: var(--primary-soft);
+      color: var(--primary);
+
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .eyebrow-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    h1 {
+      max-width: 760px;
+
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.02;
+
+      letter-spacing: -3px;
+      font-weight: 850;
+    }
+
+    .hero-subtitle {
+      max-width: 760px;
+
+      margin-top: 22px;
+
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .updated {
+      margin-top: 24px;
+
+      color: #8A94A6;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* PRIVACY SUMMARY */
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+
+      margin: 24px 0;
+    }
+
+    .summary-card {
+      padding: 24px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.04);
+    }
+
+    .summary-icon {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 16px;
+
+      border-radius: 13px;
+
+      background: var(--success-soft);
+      color: var(--success);
+
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .summary-card h3 {
+      margin-bottom: 6px;
+
+      font-size: 16px;
+      letter-spacing: -0.2px;
+    }
+
+    .summary-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* CONTENT */
+
+    .content {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 28px;
+
+      margin-top: 28px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+
+      align-self: start;
+
+      padding: 20px;
+
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+
+    .sidebar-title {
+      margin-bottom: 14px;
+
+      color: #98A2B3;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .sidebar a {
+      display: block;
+
+      padding: 9px 10px;
+
+      border-radius: 10px;
+
+      color: #475467;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .sidebar a:hover {
+      background: var(--primary-soft);
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .sections {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .section {
+      padding: 34px;
+
+      background: var(--surface);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.035);
+    }
+
+    .section-number {
+      display: inline-flex;
+
+      margin-bottom: 12px;
+      padding: 6px 9px;
+
+      border-radius: 9px;
+
+      background: var(--primary-soft);
+      color: var(--primary);
+
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+
+      font-size: 26px;
+      line-height: 1.2;
+
+      letter-spacing: -0.8px;
+    }
+
+    p {
+      color: #475467;
+    }
+
+    .section p + p {
+      margin-top: 14px;
+    }
+
+    ul {
+      margin: 16px 0 0 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #475467;
+    }
+
+    .highlight {
+      margin-top: 20px;
+      padding: 18px 20px;
+
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+
+      background: var(--primary-soft);
+
+      color: #344054;
+    }
+
+    .highlight strong {
+      color: var(--primary-dark);
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+      padding: 38px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0D68F5,
+          #0750C7
+        );
+
+      border-radius: var(--radius-lg);
+
+      color: white;
+
+      box-shadow:
+        0 20px 50px rgba(11, 103, 246, 0.22);
+    }
+
+    .contact-card h2,
+    .contact-card p {
+      color: white;
+    }
+
+    .contact-card p {
+      margin-top: 10px;
+
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact-button {
+      display: inline-flex;
+
+      margin-top: 20px;
+      padding: 12px 18px;
+
+      border-radius: 12px;
+
+      background: white;
+      color: var(--primary);
+
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .contact-button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 34px 12px 10px;
+
+      text-align: center;
+
+      color: #98A2B3;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: #667085;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: min(100% - 20px, 1120px);
+        padding-top: 12px;
+      }
+
+      .nav {
+        border-radius: 16px;
+      }
+
+      .brand-text span,
+      .nav-badge {
+        display: none;
+      }
+
+      .hero {
+        padding: 44px 24px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 44px;
+        letter-spacing: -2px;
+      }
+
+      .hero-subtitle {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 26px 22px;
+      }
+
+      .contact-card {
+        padding: 30px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- Navigation -->
+
+    <nav class="nav">
+      <div class="brand">
+        <div class="brand-logo">Q</div>
+
+        <div class="brand-text">
+          <strong>Quizaro</strong>
+          <span>AI Quiz Maker</span>
+        </div>
+      </div>
+
+      <div class="nav-badge">
+        Privacy Policy
+      </div>
+    </nav>
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Your privacy matters
+      </div>
+
+      <h1>
+        Privacy, made clear.
+      </h1>
+
+      <p class="hero-subtitle">
+        Quizaro helps you turn PDFs, photos, notes and topics into
+        interactive quizzes. This policy explains what information may
+        be processed, why it is needed, and how we approach your privacy.
+      </p>
+
+      <p class="updated">
+        Last updated: September 16, 2026
+      </p>
+
+    </section>
+
+
+    <!-- Privacy Summary -->
+
+    <section class="summary-grid">
+
+      <div class="summary-card">
+        <div class="summary-icon">✓</div>
+
+        <h3>No advertising tracking</h3>
+
+        <p>
+          Your study content is not used to track you across apps or
+          websites for advertising purposes.
+        </p>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-icon">✓</div>
+
+        <h3>Not linked to an account</h3>
+
+        <p>
+          Quizaro does not currently require an account for its core
+          quiz-generation experience.
+        </p>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-icon">✓</div>
+
+        <h3>Used for app functionality</h3>
+
+        <p>
+          Photos, PDFs and study content are processed to generate the
+          quizzes and learning material you request.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- Main Content -->
+
+    <div class="content">
+
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+
+        <div class="sidebar-title">
+          On this page
+        </div>
+
+        <a href="#overview">Overview</a>
+        <a href="#information">Information You Provide</a>
+        <a href="#ai">AI Processing</a>
+        <a href="#content">Photos & User Content</a>
+        <a href="#accounts">Accounts</a>
+        <a href="#purchases">Purchases</a>
+        <a href="#tracking">Tracking</a>
+        <a href="#security">Security</a>
+        <a href="#children">Children</a>
+        <a href="#third-party">Third-Party Services</a>
+        <a href="#changes">Policy Changes</a>
+        <a href="#contact">Contact</a>
+
+      </aside>
+
+
+      <!-- Sections -->
+
+      <div class="sections">
+
+        <section class="section" id="overview">
+
+          <span class="section-number">01</span>
+
+          <h2>Overview</h2>
+
+          <p>
+            This Privacy Policy describes how Quizaro: AI Quiz Maker
+            ("Quizaro", "we", "our", or "the app") handles information
+            when you use the application.
+          </p>
+
+          <p>
+            Our goal is to provide useful AI-powered study tools while
+            handling user information responsibly and transparently.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="information">
+
+          <span class="section-number">02</span>
+
+          <h2>Information You Provide</h2>
+
+          <p>
+            Quizaro allows you to provide study material in order to
+            generate quizzes and related learning content.
+          </p>
+
+          <p>This may include:</p>
+
+          <ul>
+            <li>Photos of study pages, notes, or learning material</li>
+            <li>PDF documents</li>
+            <li>Notes or text entered into the app</li>
+            <li>Topics entered for quiz generation</li>
+          </ul>
+
+          <div class="highlight">
+            <strong>Purpose:</strong>
+            This content is used to provide the quiz-generation and
+            learning functionality you request.
+          </div>
+
+        </section>
+
+
+        <section class="section" id="ai">
+
+          <span class="section-number">03</span>
+
+          <h2>Artificial Intelligence Processing</h2>
+
+          <p>
+            Quizaro may use artificial intelligence services to process
+            the study content you submit and generate quiz questions,
+            answers, explanations, or related learning material.
+          </p>
+
+          <p>
+            When required to provide these features, submitted content
+            may be transmitted to third-party AI service providers for
+            processing.
+          </p>
+
+          <p>
+            Quizaro does not use your submitted study content for
+            targeted advertising or cross-app advertising tracking.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="content">
+
+          <span class="section-number">04</span>
+
+          <h2>Photos, PDFs and User Content</h2>
+
+          <p>
+            User-provided photos, documents, notes, and other study
+            material are processed for app functionality, such as
+            generating quizzes from your content.
+          </p>
+
+          <p>
+            We do not sell your submitted study content to data brokers,
+            and we do not use that content to track you across apps or
+            websites owned by other companies.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="accounts">
+
+          <span class="section-number">05</span>
+
+          <h2>Accounts and Personal Information</h2>
+
+          <p>
+            Quizaro does not currently require users to create an
+            account in order to use its core functionality.
+          </p>
+
+          <p>
+            The core experience does not require you to provide your
+            name, phone number, or email address.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="purchases">
+
+          <span class="section-number">06</span>
+
+          <h2>In-App Purchases and Subscriptions</h2>
+
+          <p>
+            Quizaro may offer premium functionality through in-app
+            purchases or auto-renewable subscriptions.
+          </p>
+
+          <p>
+            Payments are processed through Apple's App Store payment
+            system.
+          </p>
+
+          <p>
+            We do not directly receive or store your full credit card
+            number, bank account information, or Apple Account payment
+            credentials.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="tracking">
+
+          <span class="section-number">07</span>
+
+          <h2>Advertising and Tracking</h2>
+
+          <p>
+            Quizaro does not currently use submitted photos, PDFs,
+            notes, or other study material for advertising tracking.
+          </p>
+
+          <p>
+            We do not use this content to build advertising profiles or
+            track you across apps and websites owned by other companies.
+          </p>
+
+          <p>
+            If future versions introduce advertising or technologies
+            that materially change our privacy practices, this Privacy
+            Policy and our App Store privacy disclosures will be updated
+            accordingly.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="security">
+
+          <span class="section-number">08</span>
+
+          <h2>Data Security</h2>
+
+          <p>
+            We use reasonable technical and organizational measures
+            designed to protect information processed through Quizaro.
+          </p>
+
+          <p>
+            However, no method of electronic transmission or storage
+            can be guaranteed to be completely secure.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="children">
+
+          <span class="section-number">09</span>
+
+          <h2>Children's Privacy</h2>
+
+          <p>
+            Quizaro is an educational utility and is not designed to
+            knowingly collect personal information from children in
+            violation of applicable law.
+          </p>
+
+          <p>
+            If we become aware that personal information has been
+            collected inappropriately, we will take reasonable steps to
+            address the situation.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="third-party">
+
+          <span class="section-number">10</span>
+
+          <h2>Third-Party Services</h2>
+
+          <p>
+            Quizaro may rely on third-party providers to support
+            features such as artificial intelligence processing and
+            Apple App Store purchases.
+          </p>
+
+          <p>
+            These providers may process information as necessary to
+            provide their services and may maintain their own privacy
+            policies and data-handling practices.
+          </p>
+
+        </section>
+
+
+        <section class="section" id="changes">
+
+          <span class="section-number">11</span>
+
+          <h2>Changes to This Privacy Policy</h2>
+
+          <p>
+            We may update this Privacy Policy when Quizaro's features,
+            services, legal requirements, or data practices change.
+          </p>
+
+          <p>
+            The latest version will be available on this page and will
+            include the most recent update date.
+          </p>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section class="contact-card" id="contact">
+
+          <h2>Questions about privacy?</h2>
+
+          <p>
+            If you have questions about this Privacy Policy or how
+            Quizaro handles information, you can contact the developer
+            directly.
+          </p>
+
+          <a
+            class="contact-button"
+            href="mailto:mohib.official@icloud.com"
+          >
+            Contact Support
+          </a>
+
+        </section>
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+      <strong>Quizaro: AI Quiz Maker</strong>
+      <br />
+      © 2026 Quizaro. All rights reserved.
+    </footer>
+
+  </main>
+
+</body>
+</html>
